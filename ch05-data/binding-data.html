@@ -7,13 +7,15 @@
 </head>
 <body>
 <script type="text/javascript">
+
     // loading from simple array
     var dataset = [ 5, 10, 15, 20, 25 ];
 
-    // loading from csv file
-    d3.csv("datafiles/food.csv", function(data) {
-        console.log(data);
-    })
+    d3.select("body").selectAll("p")
+            .data(dataset)
+            .enter()
+            .append("p")
+            .text("New Paragraph!");
 </script>
 </body>
 </html>
