@@ -15,7 +15,7 @@
             .data(dataset)
             .enter()
             .append("p")
-            .text("New Paragraph!");
+            .text(function(d) { return "I can count up to " + d; });
 </script>
 </body>
 </html>

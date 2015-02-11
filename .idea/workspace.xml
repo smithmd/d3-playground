@@ -33,7 +33,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
               <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding />
+              <folding>
+                <marker date="1423586409000" expanded="true" signature="31:281" placeholder="..." />
+                <marker date="1423586409000" expanded="true" signature="38:179" placeholder="..." />
+                <marker date="1423586409000" expanded="true" signature="186:273" placeholder="..." />
+                <marker date="1423586409000" expanded="true" signature="222:265" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,8 +46,8 @@
       <file leaf-file-name="binding-data.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ch05-data/binding-data.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41208792" vertical-offset="0" max-vertical-offset="728">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.3502747" vertical-offset="0" max-vertical-offset="728">
+              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -53,7 +58,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
               <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding />
+              <folding>
+                <marker date="1423586708000" expanded="true" signature="31:301" placeholder="..." />
+                <marker date="1423586708000" expanded="true" signature="38:179" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -270,7 +278,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
           <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
+          <folding>
+            <marker date="1423586708000" expanded="true" signature="31:301" placeholder="..." />
+            <marker date="1423586708000" expanded="true" signature="38:179" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -278,7 +289,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
           <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
+          <folding>
+            <marker date="1423586409000" expanded="true" signature="31:281" placeholder="..." />
+            <marker date="1423586409000" expanded="true" signature="38:179" placeholder="..." />
+            <marker date="1423586409000" expanded="true" signature="186:273" placeholder="..." />
+            <marker date="1423586409000" expanded="true" signature="222:265" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -292,8 +308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ch05-data/binding-data.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41208792" vertical-offset="0" max-vertical-offset="728">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.3502747" vertical-offset="0" max-vertical-offset="728">
+          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
           <folding />
         </state>
       </provider>
