@@ -16,7 +16,13 @@
         .enter()
         .append("p")
         .text(function(d) { return "I can count up to " + d; })
-        .style("color", "red");
+        .style("color", function(d) {
+            if (d > 15) {
+                return "red";
+            } else {
+                return "black";
+            }
+        });
 </script>
 </body>
 </html>
