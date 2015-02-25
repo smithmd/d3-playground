@@ -8,20 +8,21 @@
 <body>
 <script type="text/javascript">
     var dataPoints = 50;
-    var maxSize = 50;
-    var barWidth = 20;
+    var maxSize = 30;
+    var barPadding = 1;
+    var barWidth = 25 + barPadding;
 
     var dataSet = (function(x, y) {
         var d = [];
         for (var i = 0; i < x; i++) {
-            d.push(Math.floor(Math.random() * y));
+            d.push(Math.ceil(Math.random() * y));
         }
         return d;
     })(dataPoints, maxSize);
 
     var width = barWidth * dataPoints;
     var height = maxSize * 4 + 25;
-    var barPadding = 1;
+    var baseOffset = 20;
 
     console.log("SVG: " + width + 'x' + height);
 
@@ -38,10 +39,24 @@
             .append("rect")
             .attr({
                 x: function(d, i) { return i * width / dataPoints; },
-                y: function (d) { return height - (d*4); },
+                y: function (d) { return height - (d*4) - baseOffset; },
                 width: width / dataPoints - barPadding,
-                height: function(d) { return d * 4; },
+                height: function(d) { return (d * 4) + baseOffset; },
                 fill: function(d) { return 'rgb(0, 0, ' + (d * 7) + ')'; }
+            });
+
+    svg.selectAll("text")
+            .data(dataSet)
+            .enter()
+            .append("text")
+            .text(function(d) { return d; })
+            .attr({
+                x: function(d, i) { return i * (width / dataPoints) + (barWidth-barPadding)/2; },
+                y: function(d) { return height - (d * 4) - baseOffset + 15; },
+                'font-family': 'sans-serif',
+                'font-size': '11px',
+                fill: 'white',
+                'text-anchor': 'middle'
             });
 </script>
 </body>
