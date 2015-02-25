@@ -17,10 +17,10 @@
 <body>
 <script type="text/javascript">
     // D3 code goes here
-//    var dataset = [ 5, 10, 15, 20, 25 ];
+    //    var dataset = [ 5, 10, 15, 20, 25 ];
 
     // generates x random data points
-    var datapoints = 20;
+    var datapoints = 10;
     var maxSize = 30;
     var dataset = (function(x, y) {
         var d = [];
@@ -30,22 +30,32 @@
         return d;
     })(datapoints, maxSize);
 
-    d3.select("body").selectAll("div")
-                .data(dataset)
-                .enter()
-                .append("div")
-                .classed("bar", true)
-                .style('height', function(d) {
-                    return d*5 + 'px';
-                })
-                .style('background-color', function(d) {
-                    if (d*5 > 100) {
-                        return 'red';
-                    } else {
-                        return 'default';
-                    }
-                });
+    // adding svg
+    var w = datapoints * 100;
+    var h = maxSize * 3;
 
+    var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+
+    var circles = svg.selectAll("circle")
+            .data(dataset)
+            .enter()
+            .append("circle");
+
+    circles.attr("cx", function (d, i) {
+        return (i * h) + maxSize;
+    })
+            .attr("cy", h/2)
+            .attr("r", function(d) {
+                return d;
+            })
+            .attr('fill', 'yellow')
+            .attr('stroke', 'orange')
+            .attr('stroke-width', function(d) {
+                return d/2;
+            });
 </script>
 </body>
 </html>
