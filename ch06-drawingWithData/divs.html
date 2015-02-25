@@ -17,17 +17,18 @@
 <body>
 <script type="text/javascript">
     // D3 code goes here
-    var dataset = [ 5, 10, 15, 20, 25 ];
+//    var dataset = [ 5, 10, 15, 20, 25 ];
 
     // generates x random data points
-//    var datapoints = 55;
-//    var dataset = (function(x) {
-//        var d = [];
-//        for (var i = 0; i < x; i++) {
-//            d.push(Math.floor(Math.random() * 30));
-//        }
-//        return d;
-//    })(datapoints);
+    var datapoints = 10;
+    var maxSize = 25;
+    var dataset = (function(x, y) {
+        var d = [];
+        for (var i = 0; i < x; i++) {
+            d.push(Math.floor(Math.random() * y));
+        }
+        return d;
+    })(datapoints, maxSize);
 
 //    d3.select("body").selectAll("div")
     //            .data(dataset)
@@ -46,7 +47,7 @@
     //            });
 
     // adding svg
-    var w = 500;
+    var w = datapoints * 100;
     var h = 50;
 
     var svg = d3.select("body")
