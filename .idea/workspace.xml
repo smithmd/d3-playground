@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dce2d9d2-b689-4764-ac58-ebc779aaa3c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch06-drawingWithData/svg-bar-chart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch06-drawingWithData/svg-bar-chart.html" afterPath="$PROJECT_DIR$/ch06-drawingWithData/svg-bar-chart.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="d3-playground.iws" />
@@ -61,8 +61,8 @@
       <file leaf-file-name="svg-bar-chart.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ch06-drawingWithData/svg-bar-chart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7896213" vertical-offset="142" max-vertical-offset="855">
-              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.6423562" vertical-offset="37" max-vertical-offset="795">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -433,8 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ch06-drawingWithData/svg-bar-chart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7896213" vertical-offset="142" max-vertical-offset="855">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.6423562" vertical-offset="37" max-vertical-offset="795">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
