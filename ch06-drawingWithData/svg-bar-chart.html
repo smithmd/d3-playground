@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>D3 Page Template</title>
+    <script type="application/javascript" src="../js/d3.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    var dataPoints = 50;
+    var maxSize = 50;
+    var barWidth = 20;
+
+    var dataSet = (function(x, y) {
+        var d = [];
+        for (var i = 0; i < x; i++) {
+            d.push(Math.floor(Math.random() * y));
+        }
+        return d;
+    })(dataPoints, maxSize);
+
+    var width = barWidth * dataPoints;
+    var height = maxSize * 4 + 25;
+    var barPadding = 1;
+
+    console.log("SVG: " + width + 'x' + height);
+
+    var svg = d3.select("body")
+            .append("svg")
+            .attr('width', width)
+            .attr('height', height);
+
+    svg.selectAll("rect")
+            .data(dataSet)
+            .enter()
+            .append("rect")
+            .attr('x', function(d, i) {
+                return i * width / dataPoints;
+            })
+            .attr('y', function (d) {
+                return height - (d*4);
+            })
+            .attr("width", width / dataPoints - barPadding)
+            .attr("height", function(d) {
+                return d * 4;
+            })
+            .attr('fill', function(d) {
+                return 'rgb(0, 0, ' + (d * 7) + ')';
+            });
+</script>
+</body>
+</html>
